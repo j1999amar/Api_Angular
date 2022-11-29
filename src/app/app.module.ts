@@ -12,7 +12,39 @@ import { ShoppingDataComponent } from './shopping-data/shopping-data.component';
 import { UserComponent } from './user/user.component';
 import { TodoDataComponent } from './todo-data/todo-data.component';
 import { QuotesComponent } from './quotes/quotes.component';
-
+import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule, Routes } from '@angular/router';
+const myRouter:Routes=[{
+  path:"",
+  component:PassengerDataComponent
+},
+{
+  path:"usData",
+  component:UsDataComponent
+},
+{
+  path:"publicData",
+  component:PublicDataComponent
+},
+{
+  path:"shoppingData",
+  component:ShoppingDataComponent
+},
+{
+  path:"user",
+  component:UserComponent
+},
+{
+  path:"todoData",
+  component:TodoDataComponent
+},
+{
+  path:"quotesData",
+  component:QuotesComponent
+},{
+  path:"userData",
+  component:UserDataComponent
+}]
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,11 +55,13 @@ import { QuotesComponent } from './quotes/quotes.component';
     ShoppingDataComponent,
     UserComponent,
     TodoDataComponent,
-    QuotesComponent
+    QuotesComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule.forChild(myRouter)
   ],
   providers: [],
   bootstrap: [AppComponent]
