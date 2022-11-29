@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+          <h3>Public Data List</h3>
+            <div class="row g-3">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3 col-xxl-3" *ngFor="let i of data.entries" >
+                    <div class="card  h-100 " >
+                        <div class="card-body d-flex flex-column ">
+                          <h5 class="card-title   ">{{i.API}}</h5>
+                          <p>
+                            Description :{{i.Description}} <br>
+                            <a class="mt-auto" href="{{i.Link}}">Info</a>
+                          </p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
