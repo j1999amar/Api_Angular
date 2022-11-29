@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <h3>Todo Data List</h3>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table ">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">User ID</th>
+                    <th scope="col">Todo's</th>
+                    <th scope="col">Complete Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of data.todos" >
+                    <td>{{i.id}}</td>
+                    <td>{{i.userId}}</td>
+                    <td>{{i.todo}}</td>
+                    <td>{{i.completed}}</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+        </div>
+    </div>
+</div>

@@ -10,6 +10,7 @@ import { PublicDataComponent } from './public-data/public-data.component';
 import { UserDataComponent } from './user-data/user-data.component';
 import { ShoppingDataComponent } from './shopping-data/shopping-data.component';
 import { UserComponent } from './user/user.component';
+import { TodoDataComponent } from './todo-data/todo-data.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { UserComponent } from './user/user.component';
     PublicDataComponent,
     UserDataComponent,
     ShoppingDataComponent,
-    UserComponent
+    UserComponent,
+    TodoDataComponent
   ],
   imports: [
     BrowserModule,
