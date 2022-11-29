@@ -1,1 +1,19 @@
-<p>passenger-data works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+          <h3>Passenger List</h3>
+            <div class="row g-3">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-3 col-xxl-3" *ngFor="let i of data.data" >
+                    <div class="card  h-100" >
+                        <div class="card-body">
+                          <h5 class="card-title">{{i.name}}</h5>
+                          <p class="card-text" *ngFor="let j of i.airline" >Id : {{j.id}}<br>Name : {{j.name}}<br>Country :{{j.country}}
+                            <img src="{{j.logo}}" class="card-img-top" alt="...">
+                          </p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
