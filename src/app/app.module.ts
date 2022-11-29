@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { PassengerDataComponent } from './passenger-data/passenger-data.component';
 import { UsDataComponent } from './us-data/us-data.component';
 import { PublicDataComponent } from './public-data/public-data.component';
+import { UserDataComponent } from './user-data/user-data.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PassengerDataComponent,
     UsDataComponent,
-    PublicDataComponent
+    PublicDataComponent,
+    UserDataComponent
   ],
   imports: [
     BrowserModule,
