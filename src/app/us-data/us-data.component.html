@@ -1,0 +1,17 @@
+<table class="table ">
+    <thead>
+      <tr>
+        <th scope="col">Nation</th>
+        <th scope="col">Year</th>
+        <th scope="col">Population</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of data.data" >
+        <td>{{i.Nation}}</td>
+        <td>{{i.Year}}</td>
+        <td>{{i.Population}}</td>
+      </tr>
+     
+    </tbody>
+  </table>
