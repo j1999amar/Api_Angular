@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PassengerDataComponent } from './passenger-data/passenger-data.component';
@@ -61,7 +60,8 @@ const myRouter:Routes=[{
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forChild(myRouter)
+    RouterModule.forChild(myRouter),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
