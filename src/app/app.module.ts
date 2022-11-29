@@ -11,6 +11,7 @@ import { UserDataComponent } from './user-data/user-data.component';
 import { ShoppingDataComponent } from './shopping-data/shopping-data.component';
 import { UserComponent } from './user/user.component';
 import { TodoDataComponent } from './todo-data/todo-data.component';
+import { QuotesComponent } from './quotes/quotes.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TodoDataComponent } from './todo-data/todo-data.component';
     UserDataComponent,
     ShoppingDataComponent,
     UserComponent,
-    TodoDataComponent
+    TodoDataComponent,
+    QuotesComponent
   ],
   imports: [
     BrowserModule,
