@@ -8,6 +8,7 @@ import { PassengerDataComponent } from './passenger-data/passenger-data.componen
 import { UsDataComponent } from './us-data/us-data.component';
 import { PublicDataComponent } from './public-data/public-data.component';
 import { UserDataComponent } from './user-data/user-data.component';
+import { ShoppingDataComponent } from './shopping-data/shopping-data.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { UserDataComponent } from './user-data/user-data.component';
     PassengerDataComponent,
     UsDataComponent,
     PublicDataComponent,
-    UserDataComponent
+    UserDataComponent,
+    ShoppingDataComponent
   ],
   imports: [
     BrowserModule,
